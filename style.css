@@ -91,6 +91,7 @@ header#main-header div.side button {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 div.banner {
   height: 380px;
@@ -102,4 +103,71 @@ div.banner {
   align-items: center;
 
   color: #fff;
+}
+
+div.bar {
+  height: 59px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+div.bar .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 285px;
+  height: 100%;
+}
+div.bar .content ul {
+  display: flex;
+  list-style: none;
+  height: 100%;
+}
+div.bar .content ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px;
+  position: relative;
+}
+div.bar .content ul li.active strong {
+  color: #3bb9e3;
+}
+div.bar .content ul li.active::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #3bb9e3;
+}
+div.bar .content ul li span {
+  font-size: 12px;
+  color: #667580;
+  font-weight: bold;
+}
+div.bar .content ul li strong {
+  font-size: 18px;
+  color: #667580;
+  font-weight: bold;
+  margin-top: 2px;
+}
+div.bar .content .actions {
+  display: flex;
+}
+div.bar .content .actions button {
+  background: #fff;
+  height: 34px;
+  width: 90px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #3bb9e3;
+  border-radius: 16px;
+  border: solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 20px;
 }
