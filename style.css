@@ -157,6 +157,10 @@ div.bar .content ul li strong {
 div.bar .content .actions {
   display: flex;
 }
+div.bar .content > ul li:hover {
+  cursor: pointer;
+  background: #ccc;
+}
 .follow-button {
   background: #fff;
   height: 34px;
@@ -172,7 +176,10 @@ div.bar .content .actions {
   cursor: pointer;
   margin-right: 20px;
 }
-
+.follow-button:hover {
+  background: #3bb9e3;
+  color: #fff;
+}
 div.wrapper-content {
   display: flex;
 }
@@ -258,7 +265,7 @@ div.wrapper-content aside.profile .images ul li {
 div.wrapper-content .timeline {
   flex: 1;
   background: #fff;
-  margin: 10px;
+  margin: 10px 20px 0;
 }
 div.wrapper-content aside.widgets {
   width: 290px;
@@ -374,4 +381,15 @@ div.wrapper-content aside.widgets .trends ul li > a {
   color: #3bb9e3;
   text-decoration: none;
   font-size: 14px;
+}
+div.wrapper-content aside.widgets .copyright {
+  font-size: 14px;
+  color: #657786;
+}
+div.wrapper-content aside.widgets .copyright a {
+  text-decoration: none;
+}
+div.wrapper-content aside.widgets .copyright a:hover {
+  color: #0084b4;
+  text-decoration: underline;
 }
