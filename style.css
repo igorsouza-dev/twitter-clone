@@ -267,6 +267,7 @@ div.wrapper-content aside.widgets {
 div.wrapper-content aside.widgets .widget {
   background: #fff;
   padding: 15px;
+  margin-bottom: 10px;
 }
 div.wrapper-content aside.widgets .widget .title {
   display: flex;
@@ -353,6 +354,24 @@ div.wrapper-content
 }
 div.wrapper-content aside.widgets .follow ul li > a {
   color: #ccd6dd;
+  text-decoration: none;
+  font-size: 14px;
+}
+div.wrapper-content aside.widgets .follow ul li > a.find {
+  color: #3bb9e3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+div.wrapper-content aside.widgets .trends ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+div.wrapper-content aside.widgets .trends ul li:first-child {
+  margin-top: 10px;
+}
+div.wrapper-content aside.widgets .trends ul li > a {
+  color: #3bb9e3;
   text-decoration: none;
   font-size: 14px;
 }
